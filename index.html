@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>겉바속촉 우유토스트</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Noto Sans KR', sans-serif;
+  background:#fffaf0;
+  color:#2b1b10;
+}
+
+.page{
+  max-width:680px;
+  margin:0 auto;
+  padding:18px 16px 36px;
+}
+
+.hero{
+  text-align:center;
+  padding:20px 0 18px;
+}
+
+.hero h1{
+  margin:0;
+  font-family:'Jua', sans-serif;
+  font-size:42px;
+  color:#4a2508;
+  letter-spacing:-1px;
+}
+
+.hero p{
+  margin:10px 0 18px;
+  font-size:18px;
+  font-weight:700;
+  color:#7a4a1d;
+}
+
+.main-img{
+  width:100%;
+  border-radius:18px;
+  display:block;
+  box-shadow:0 8px 20px rgba(99,55,12,.12);
+}
+
+.card{
+  background:#fffef9;
+  border:1px solid #f3d8ae;
+  border-radius:18px;
+  padding:22px 20px;
+  margin-top:18px;
+}
+
+.card h2{
+  margin:0 0 16px;
+  font-size:25px;
+  font-family:'Jua', sans-serif;
+  color:#4a2508;
+}
+
+ul{
+  margin:0;
+  padding-left:22px;
+}
+
+li{
+  font-size:17px;
+  line-height:1.9;
+  font-weight:600;
+}
+
+.core{
+  text-align:center;
+  border:2px solid #ffb33e;
+  background:linear-gradient(180deg,#fffdf7,#fff6dc);
+}
+
+.core h2{
+  color:#f28a00;
+  margin-bottom:10px;
+}
+
+.core p{
+  font-size:17px;
+  line-height:1.6;
+  font-weight:700;
+  margin:8px 0 16px;
+}
+
+.core a{
+  display:inline-block;
+  background:#ffa51e;
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+  padding:12px 26px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(255,165,30,.25);
+}
+
+.step{
+  display:flex;
+  gap:12px;
+  padding:15px 0;
+  border-bottom:1px dashed #efd2a8;
+}
+
+.step:last-child{
+  border-bottom:0;
+  padding-bottom:0;
+}
+
+.num{
+  flex:0 0 28px;
+  height:28px;
+  border-radius:50%;
+  background:#ff9f1a;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+}
+
+.step h3{
+  margin:0 0 5px;
+  font-size:18px;
+  color:#3b220d;
+}
+
+.step p{
+  margin:0;
+  font-size:16px;
+  line-height:1.65;
+  font-weight:500;
+}
+
+.note{
+  display:inline-block;
+  margin-top:8px;
+  padding:8px 12px;
+  border-radius:10px;
+  background:#fff3dc;
+  color:#c06000;
+  font-size:15px;
+  font-weight:700;
+}
+
+.tip-list{
+  list-style:none;
+  padding:0;
+}
+
+.tip-list li{
+  position:relative;
+  padding-left:30px;
+  margin-bottom:8px;
+  line-height:1.65;
+}
+
+.tip-list li:before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:1px;
+  width:21px;
+  height:21px;
+  border-radius:50%;
+  background:#ffae2b;
+  color:#fff;
+  font-size:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+}
+
+.share{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.share p{
+  margin:0 0 6px;
+  font-size:15px;
+  color:#6d4a2b;
+  font-weight:600;
+}
+
+.buttons{
+  display:flex;
+  gap:10px;
+}
+
+button{
+  flex:1;
+  border:0;
+  padding:14px 12px;
+  border-radius:13px;
+  font-size:16px;
+  font-weight:800;
+  cursor:pointer;
+  font-family:'Noto Sans KR', sans-serif;
+  color:#111 !important;
+  -webkit-text-fill-color:#111;
+}
+
+.share-btn{
+  background:#ffbd35;
+}
+
+.copy-btn{
+  background:#fff;
+  border:1px solid #e7c99d;
+}
+
+@media(max-width:480px){
+  .hero h1{
+    font-size:36px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .card{
+    padding:20px 17px;
+  }
+
+  .card h2{
+    font-size:23px;
+  }
+
+  li{
+    font-size:16px;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <section class="hero">
+    <h1>🍞 겉바속촉 우유토스트</h1>
+    <p>🧡 우유 향 가득, 부드러운 한입 🧡</p>
+    <img src="milk-toast.jpg" alt="겉바속촉 우유토스트" class="main-img">
+  </section>
+
+  <section class="card">
+    <h2>🥣 준비물</h2>
+    <ul>
+      <li>두꺼운 식빵 1장</li>
+      <li>우유 180~200ml</li>
+      <li>계란 1개</li>
+      <li>비밀재료 1큰술</li>
+      <li>꿀 또는 알룰로스 1큰술</li>
+      <li>버터 약간</li>
+    </ul>
+  </section>
+
+  <section class="card core">
+    <h2>✨ 핵심 재료</h2>
+    <p>부드럽고 촉촉한 식감의 핵심 포인트!</p>
+    <a href="#" target="_blank">핵심 재료 보러가기</a>
+  </section>
+
+  <section class="card">
+    <h2>🍳 만드는 방법</h2>
+
+    <div class="step">
+      <div class="num">1</div>
+      <div>
+        <h3>우유 베이스 만들기</h3>
+        <p>볼에 우유, 계란, 비밀재료, 꿀을 넣고 거품이 생기지 않게 잘 섞어주세요.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">2</div>
+      <div>
+        <h3>식빵 담그기</h3>
+        <p>식빵을 우유물에 앞뒤로 골고루 적신 뒤 냉장고에서 20~30분 정도 두어 촉촉하게 만들어주세요.</p>
+        <span class="note">시간이 부족하면 10분만 담가도 OK!</span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">3</div>
+      <div>
+        <h3>천천히 굽기</h3>
+        <p>팬에 버터를 두르고 약불로 달군 뒤 식빵을 올려 앞뒤로 노릇하게 구워주세요.</p>
+        <span class="note">타지 않게 천천히 구워야 속까지 촉촉해요.</span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">4</div>
+      <div>
+        <h3>마무리</h3>
+        <p>접시에 담고 꿀, 메이플시럽, 슈가파우더 등을 취향에 맞게 뿌려 완성하세요.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>💡 만들기 팁</h2>
+    <ul class="tip-list">
+      <li>두꺼운 식빵을 사용하면 식감이 훨씬 좋아요.</li>
+      <li>우유물에 너무 오래 담그면 빵이 쉽게 무를 수 있어요.</li>
+      <li>30분 숙성은 촉촉한 식감을 위한 최소 시간이에요.</li>
+      <li>센 불보다 약불에서 천천히 구워야 겉은 바삭, 속은 촉촉해요.</li>
+      <li>뚜껑을 덮고 1~2분 구우면 더 부드럽게 완성돼요.</li>
+    </ul>
+  </section>
+
+  <section class="card share">
+    <h2>📤 레시피 공유하기</h2>
+    <p>이 레시피가 도움이 되셨다면 가족이나 친구에게 공유해 보세요! 😊</p>
+
+    <div class="buttons">
+      <button class="share-btn" onclick="sharePage()">공유하기</button>
+      <button class="copy-btn" onclick="copyLink()">링크 복사</button>
+    </div>
+  </section>
+
+</div>
+
+<script>
+function sharePage(){
+  if(navigator.share){
+    navigator.share({
+      title:'겉바속촉 우유토스트',
+      text:'우유 향 가득, 부드러운 한입! 겉바속촉 우유토스트 레시피',
+      url:window.location.href
+    });
+  }else{
+    copyLink();
+  }
+}
+
+function copyLink(){
+  navigator.clipboard.writeText(window.location.href).then(function(){
+    alert('링크가 복사되었어요!');
+  });
+}
+</script>
+
+</body>
+</html>
